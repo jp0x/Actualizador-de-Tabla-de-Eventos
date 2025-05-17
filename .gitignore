@@ -1,0 +1,11 @@
+# Evita subir variables sensibles
+.env
+
+# Evita subir archivos con datos reales de clientes
+*.xlsx
+
+# Archivos de salida temporales
+*.log
+*.bak
+__pycache__/
+*.pyc
