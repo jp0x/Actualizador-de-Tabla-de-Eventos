@@ -18,7 +18,6 @@ Esta herramienta en Python permite consultar vía IMAP la última alerta enviada
 
 - Python 3.8+
 - Conexión IMAP habilitada (Gmail o corporativo)
-- Acceso vía VPN (si estás en una red monitoreada como CCI)
 
 ---
 
