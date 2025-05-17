@@ -1,12 +1,30 @@
-# Actualizador de Tabla de Eventos
- Cargar, analizar y actualizar una tabla de eventos o alertas para su uso en análisis de seguridad.
+# 📧 IMAP Alert Checker - Tabla Automática de Últimas Alertas
 
-## Instrucciones
+Esta herramienta en Python permite consultar vía IMAP la última alerta enviada por correo para cada cliente, según filtros personalizados definidos en un archivo Excel. El script actualiza automáticamente la fecha del último evento en la tabla.
 
-1. Coloca y verifica el archivo base en la carpeta `/datos`.
-2. Edita el script `actualizar_tabla.py` para aplicar reglas o transformaciones.
-3. Ejecuta el script desde terminal:
+---
+
+## 🧩 Archivos principales
+
+| Archivo               | Descripción                                                  |
+|------------------------|--------------------------------------------------------------|
+| `actualizar_tabla.py` | Script principal que ejecuta la búsqueda y actualización.     |
+| `TB-CL.xlsx`           | Archivo Excel con los criterios por cliente. No se sube a GitHub. |
+| `.env`                | Contiene credenciales y configuraciones.                     |
+
+---
+
+## 🧠 Requisitos
+
+- Python 3.8+
+- Conexión IMAP habilitada (Gmail o corporativo)
+- Acceso vía VPN (si estás en una red monitoreada como CCI)
+
+---
+
+## 🛠️ Instalación
 
 ```bash
-cd scripts
-python actualizar_tabla.py
+git clone https://github.com/tuusuario/imap-alert-checker.git
+cd imap-alert-checker
+pip install -r requirements.txt
